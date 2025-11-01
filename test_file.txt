@@ -1,0 +1,3 @@
+This is a test file for the QR File Server.
+It demonstrates the file upload and download functionality.
+After uploading, a QR code will be generated that can be scanned to download this file on another device.

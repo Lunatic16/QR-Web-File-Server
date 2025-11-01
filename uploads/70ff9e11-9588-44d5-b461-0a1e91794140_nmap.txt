@@ -1,0 +1,351 @@
+[sudo] password for peter: 
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-03-27 03:06 EST
+Stats: 0:00:34 elapsed; 231 hosts completed (24 up), 24 undergoing Service Scan
+Service scan Timing: About 91.67% done; ETC: 03:07 (0:00:02 remaining)
+Nmap scan report for DeviceDHCP.Home (192.168.1.1)
+Host is up (0.0010s latency).
+Not shown: 95 closed tcp ports (reset)
+PORT    STATE    SERVICE  VERSION
+21/tcp  open     ftp      D-Link/Comtrend DSL modem ftp firmware update
+22/tcp  open     ssh      Dropbear sshd 0.46 (protocol 2.0)
+23/tcp  filtered telnet
+80/tcp  open     http     micro_httpd
+443/tcp open     ssl/http micro_httpd
+MAC Address: EC:4F:82:12:FC:31 (Calix)
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel, cpe:/o:acme:micro_httpd
+
+Nmap scan report for 192.168.1.3
+Host is up (0.0036s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http?
+443/tcp open  ssl/https?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.94SVN%I=2%D=3/27%Time=67E50722%P=x86_64-pc-linux-gnu%r(G
+SF:etRequest,219,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nETag:\
+SF:x20\"37c-110-66987a92\"\r\nLast-Modified:\x20Thu,\x2018\x20Jul\x202024\
+SF:x2002:14:42\x20GMT\r\nDate:\x20Thu,\x2027\x20Mar\x202025\x2008:06:58\x2
+SF:0GMT\r\nX-Frame-Options:\x20deny\r\nContent-Security-Policy:\x20frame-a
+SF:ncestors\x20'none'\r\nContent-Type:\x20text/html\r\nContent-Length:\x20
+SF:272\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"utf-8\"\?>\n<!DOCTY
+SF:PE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.1//EN\"\x20\"http:
+SF://www\.w3\.org/TR/xhtml11/DTD/xhtml11\.dtd\">\n<html\x20xmlns=\"http://
+SF:www\.w3\.org/1999/xhtml\">\n<head>\n<meta\x20http-equiv=\"refresh\"\x20
+SF:content=\"0;\x20URL=/webpages/index\.html\"\x20/>\n</head>\n</html>\n")
+SF:%r(HTTPOptions,219,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nE
+SF:Tag:\x20\"37c-110-66987a92\"\r\nLast-Modified:\x20Thu,\x2018\x20Jul\x20
+SF:2024\x2002:14:42\x20GMT\r\nDate:\x20Thu,\x2027\x20Mar\x202025\x2008:06:
+SF:58\x20GMT\r\nX-Frame-Options:\x20deny\r\nContent-Security-Policy:\x20fr
+SF:ame-ancestors\x20'none'\r\nContent-Type:\x20text/html\r\nContent-Length
+SF::\x20272\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"utf-8\"\?>\n<!
+SF:DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.1//EN\"\x20\"
+SF:http://www\.w3\.org/TR/xhtml11/DTD/xhtml11\.dtd\">\n<html\x20xmlns=\"ht
+SF:tp://www\.w3\.org/1999/xhtml\">\n<head>\n<meta\x20http-equiv=\"refresh\
+SF:"\x20content=\"0;\x20URL=/webpages/index\.html\"\x20/>\n</head>\n</html
+SF:>\n")%r(RTSPRequest,79,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nConnectio
+SF:n:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=20\r\nContent-Type:\x20text/
+SF:html\r\n\r\n<h1>Bad\x20Request</h1>")%r(FourOhFourRequest,AC,"HTTP/1\.0
+SF:\x20404\x20Not\x20Found\r\nConnection:\x20close\r\nContent-Type:\x20tex
+SF:t/html\r\n\r\n<h1>Not\x20Found</h1>The\x20requested\x20URL\x20/nice%20p
+SF:orts%2C/Tri%6Eity\.txt%2ebak\x20was\x20not\x20found\x20on\x20this\x20se
+SF:rver\.");
+MAC Address: 54:AF:97:16:C4:7C (TP-Link Limited)
+Device type: WAP
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3.18 cpe:/o:linux:linux_kernel:4.1
+OS details: OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4)
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.54
+Host is up (0.016s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT      STATE SERVICE    VERSION
+49152/tcp open  tcpwrapped
+MAC Address: DE:D4:2A:9A:F9:E7 (Unknown)
+Device type: general purpose
+Running: Apple macOS 11.X
+OS details: Apple macOS 11 (Big Sur) (Darwin 20.6.0)
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.89
+Host is up (0.0066s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+8009/tcp open  tcpwrapped
+MAC Address: DC:A0:D0:AF:F4:68 (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=3/27%OT=8009%CT=7%CU=40104%PV=Y%DS=1%DC=D%G=Y%M=DCA
+OS:0D0%TM=67E5074F%P=x86_64-pc-linux-gnu)SEQ(SP=101%GCD=1%ISR=108%TI=Z%CI=Z
+OS:%II=I%TS=A)OPS(O1=M5B4ST11NW8%O2=M5B4ST11NW8%O3=M5B4NNT11NW8%O4=M5B4ST11
+OS:NW8%O5=M5B4ST11NW8%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE
+OS:88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW8%CC=Y%Q=)T1(R=Y%DF=Y%T=4
+OS:0%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40
+OS:%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q
+OS:=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y
+OS:%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.93
+Host is up (0.0095s latency).
+All 100 scanned ports on 192.168.1.93 are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: D8:61:62:E7:0F:2C (Wistron Neweb)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: specialized
+Running: IHome embedded, iRobot embedded
+OS CPE: cpe:/h:ihome:isp5wwc cpe:/h:irobot:roomba_980
+OS details: IHome SmartPlug iSP5WWC, iRobot Roomba 980 vacuum cleaner
+Network Distance: 1 hop
+
+Nmap scan report for vizio.home.int (192.168.1.119)
+Host is up (0.0067s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+8008/tcp open  http       Google Chromecast httpd
+8009/tcp open  ssl/ajp13?
+MAC Address: C4:1C:FF:36:58:66 (Vizio)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+Service Info: Device: media device
+
+Nmap scan report for 192.168.1.123
+Host is up (0.019s latency).
+All 100 scanned ports on 192.168.1.123 are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: CC:50:E3:12:0A:B9 (Espressif)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (96%), Advanced Illumination DCS-100E lighting controller (96%), AudioControl D3400 network amplifier (96%), British Gas GS-Z3 data logger (96%), Daysequerra M4.2SI radio (96%), Denver Electronics AC-5000W MK2 camera (96%), DTE Energy Bridge (lwIP stack) (96%), Enlogic PDU (FreeRTOS/lwIP) (96%), Espressif esp8266 firmware (lwIP stack) (96%), Espressif ESP8266 WiFi system-on-a-chip (96%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for esp_53c800.home.int (192.168.1.124)
+Host is up (0.019s latency).
+All 100 scanned ports on esp_53c800.home.int (192.168.1.124) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: DC:4F:22:53:C8:00 (Espressif)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (96%), Advanced Illumination DCS-100E lighting controller (96%), AudioControl D3400 network amplifier (96%), British Gas GS-Z3 data logger (96%), Daysequerra M4.2SI radio (96%), Denver Electronics AC-5000W MK2 camera (96%), DTE Energy Bridge (lwIP stack) (96%), Enlogic PDU (FreeRTOS/lwIP) (96%), Espressif esp8266 firmware (lwIP stack) (96%), Espressif ESP8266 WiFi system-on-a-chip (96%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.126
+Host is up (0.021s latency).
+All 100 scanned ports on 192.168.1.126 are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: CC:50:E3:42:5A:53 (Espressif)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (96%), Advanced Illumination DCS-100E lighting controller (96%), AudioControl D3400 network amplifier (96%), British Gas GS-Z3 data logger (96%), Daysequerra M4.2SI radio (96%), Denver Electronics AC-5000W MK2 camera (96%), DTE Energy Bridge (lwIP stack) (96%), Enlogic PDU (FreeRTOS/lwIP) (96%), Espressif esp8266 firmware (lwIP stack) (96%), Espressif ESP8266 WiFi system-on-a-chip (96%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for r1tvr.home.int (192.168.1.131)
+Host is up (0.013s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: FC:F1:36:2B:45:C7 (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.132
+Host is up (0.013s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: 24:4B:03:D1:88:02 (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for r1kitchenr.home.int (192.168.1.133)
+Host is up (0.014s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: FC:F1:36:33:A3:A0 (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.134
+Host is up (0.014s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: 38:01:95:81:6A:AB (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for r1couchl.home.int (192.168.1.135)
+Host is up (0.014s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: FC:F1:36:33:AB:E6 (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.136
+Host is up (0.014s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: FC:8F:90:FF:0C:6C (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for r1dining.home.int (192.168.1.137)
+Host is up (0.015s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    lighttpd
+MAC Address: FC:F1:36:33:C4:59 (Samsung Electronics)
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.143
+Host is up (0.034s latency).
+All 100 scanned ports on 192.168.1.143 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+MAC Address: 3C:FA:06:C7:34:8A (Microsoft)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for homeassistant.home.int (192.168.1.151)
+Host is up (0.010s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 9.9 (protocol 2.0)
+111/tcp  open  rpcbind
+8888/tcp open  http    nginx
+MAC Address: DC:A6:32:F2:A6:17 (Raspberry Pi Trading)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.152
+Host is up (0.0059s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+8009/tcp open  tcpwrapped
+MAC Address: 0C:43:F9:3D:1C:A6 (Amazon Technologies)
+Device type: media device|phone
+Running: Amazon embedded, CyanogenMod 12.X, Google Android 5.X
+OS CPE: cpe:/o:cyanogenmod:cyanogenmod:12 cpe:/o:google:android:5.0.2
+OS details: Amazon Kindle Paperwhite, CyanogenMod 12 (Android 5.0.2)
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.163
+Host is up (0.0093s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+8888/tcp open  tcpwrapped
+MAC Address: 58:A8:E8:0F:43:4D (Unknown)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose|storage-misc|WAP
+Running (JUST GUESSING): Linux 5.X|2.6.X|3.X|4.X (92%), Netgear RAIDiator 4.X (87%), Ruckus embedded (87%)
+OS CPE: cpe:/o:linux:linux_kernel:5 cpe:/o:linux:linux_kernel:2.6.32 cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4 cpe:/o:netgear:raidiator:4.2.24 cpe:/h:ruckus:zoneflex_r710
+Aggressive OS guesses: Linux 5.0 - 5.5 (92%), Linux 2.6.32 (87%), Linux 3.10 - 4.11 (87%), Linux 3.2 - 4.9 (87%), Netgear ReadyNAS 2100 (RAIDiator 4.2.24) (87%), Ruckus ZoneFlex R710 WAP (Linux 3.4) (87%), Linux 2.6.32 - 3.10 (86%), Linux 2.6.32 - 3.13 (86%), Linux 2.6.39 (86%), Linux 4.15 - 5.8 (86%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.167
+Host is up (0.0072s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE    VERSION
+8888/tcp open  tcpwrapped
+MAC Address: 44:6D:7F:88:E0:03 (Amazon Technologies)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Linux 3.2 - 4.9 (95%), Linux 3.10 - 4.11 (92%), OpenWrt Chaos Calmer 15.05 (Linux 3.18) or Designated Driver (Linux 4.1 or 4.4) (91%), Linux 3.2 - 3.16 (91%), Linux 3.13 (90%), Linux 3.16 (90%), Linux 4.8 (90%), Linux 4.9 (90%), Linux 2.6.32 (89%), Linux 3.12 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for ESP_8C6B86.home.int (192.168.1.180)
+Host is up (0.023s latency).
+All 100 scanned ports on ESP_8C6B86.home.int (192.168.1.180) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 84:0D:8E:8C:6B:86 (Espressif)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: 2N Helios IP VoIP doorbell (96%), Advanced Illumination DCS-100E lighting controller (96%), AudioControl D3400 network amplifier (96%), British Gas GS-Z3 data logger (96%), Daysequerra M4.2SI radio (96%), Denver Electronics AC-5000W MK2 camera (96%), DTE Energy Bridge (lwIP stack) (96%), Enlogic PDU (FreeRTOS/lwIP) (96%), Espressif esp8266 firmware (lwIP stack) (96%), Espressif ESP8266 WiFi system-on-a-chip (96%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+
+Nmap scan report for tcl-rokutv-437.home.int (192.168.1.182)
+Host is up (0.013s latency).
+All 100 scanned ports on tcl-rokutv-437.home.int (192.168.1.182) are in ignored states.
+Not shown: 100 closed tcp ports (reset)
+MAC Address: 74:DF:BF:19:37:36 (Liteon Technology)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for wyzelivingroom.home.int (192.168.1.185)
+Host is up (0.013s latency).
+Not shown: 99 closed tcp ports (reset)
+PORT    STATE SERVICE VERSION
+554/tcp open  rtsp    DoorBird video doorbell rtspd
+MAC Address: A4:DA:22:2C:3E:6D (Wyze Labs)
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Network Distance: 1 hop
+Service Info: Device: webcam
+
+Nmap scan report for netalert.home.int.Home (192.168.1.111)
+Host is up (0.000089s latency).
+Not shown: 88 closed tcp ports (reset)
+PORT     STATE    SERVICE       VERSION
+22/tcp   open     ssh           OpenSSH 9.6p1 Ubuntu 3ubuntu13.8 (Ubuntu Linux; protocol 2.0)
+53/tcp   open     domain        dnsmasq pi-hole-v2.91rc5+1
+80/tcp   filtered http
+139/tcp  open     netbios-ssn   Samba smbd 4.6.2
+443/tcp  filtered https
+444/tcp  filtered snpp
+445/tcp  open     netbios-ssn   Samba smbd 4.6.2
+3389/tcp open     ms-wbt-server xrdp
+5000/tcp filtered upnp
+8000/tcp filtered http-alt
+8080/tcp open     webdav
+8443/tcp open     ssl/webdav
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.32
+OS details: Linux 2.6.32
+Network Distance: 0 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (25 hosts up) scanned in 79.04 seconds
+

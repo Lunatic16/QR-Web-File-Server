@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR File Server - Receive Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Receive Files</h1>
+        <p>Scan a QR code from another device or upload a file from here</p>
+        
+        {% if qr_code %}
+        <!-- Display QR code if filename is provided -->
+        <div id="result" class="result-section">
+            <h2>File Uploaded Successfully!</h2>
+            <p>Scan the QR code below to download the file on another device.</p>
+            <div class="qr-container">
+                <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code for {{ filename }}">
+            </div>
+            <div class="file-info">
+                <p>File: {{ filename.split('_', 1)[1] if '_' in filename else filename }}</p>
+                <a href="/download/{{ filename }}" class="download-btn">Download File</a>
+            </div>
+            <a href="/receive" class="new-upload-btn">Receive Another File</a>
+        </div>
+        {% else %}
+        <!-- File upload form for receiving files -->
+        <div class="upload-section">
+            <form id="receive-form" enctype="multipart/form-data">
+                <div class="file-input-wrapper">
+                    <input type="file" id="file-input-receive" name="file" required>
+                    <label for="file-input-receive" class="file-label">Choose a file to receive</label>
+                </div>
+                <button type="submit" class="upload-btn">Receive & Generate QR Code</button>
+            </form>
+        </div>
+        
+        <div id="result" class="result-section" style="display: none;">
+            <h2>File Received Successfully!</h2>
+            <p>Your file has been received. Scan the QR code below to download it on another device.</p>
+            <div class="qr-container">
+                <img id="qr-code-receive" src="" alt="QR Code">
+            </div>
+            <div class="file-url">
+                <p>Or copy this link: <span id="file-url-text-receive"></span></p>
+                <button id="copy-btn-receive" class="copy-btn">Copy Link</button>
+            </div>
+            <a href="/receive" class="new-upload-btn">Receive Another File</a>
+        </div>
+        
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        
+        <div class="loading" id="loading-receive" style="display: none;">
+            <div class="spinner"></div>
+            <p>Receiving file...</p>
+        </div>
+        
+        <a href="/" class="home-btn">Go to Main Page</a>
+        {% endif %}
+    </div>
+    
+    <script>
+        // Handle file receiving if we're on the receive form page
+        const receiveForm = document.getElementById('receive-form');
+        if (receiveForm) {
+            document.getElementById('receive-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData();
+                const fileInput = document.getElementById('file-input-receive');
+                
+                if (!fileInput.files[0]) {
+                    showError('Please select a file first');
+                    return;
+                }
+                
+                formData.append('file', fileInput.files[0]);
+                
+                // Show loading
+                document.getElementById('loading-receive').style.display = 'block';
+                
+                fetch('/receive_file', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Hide loading
+                    document.getElementById('loading-receive').style.display = 'none';
+                    
+                    if (data.success) {
+                        document.getElementById('qr-code-receive').src = 'data:image/png;base64,' + data.qr_code;
+                        document.getElementById('file-url-text-receive').textContent = data.file_url;
+                        document.getElementById('result').style.display = 'block';
+                        
+                        // Add event listener to copy button
+                        document.getElementById('copy-btn-receive').addEventListener('click', function() {
+                            navigator.clipboard.writeText(data.file_url).then(() => {
+                                alert('Link copied to clipboard!');
+                            });
+                        });
+                    } else {
+                        showError(data.error);
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('loading-receive').style.display = 'none';
+                    showError('An error occurred during file receive: ' + error.message);
+                });
+            });
+        }
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
