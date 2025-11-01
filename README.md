@@ -59,6 +59,7 @@ python app.py
 ## Supported File Types
 
 Currently set to "None" to allow all file types but can be modified to restrict file types by adding them to line 14 ALLOWED_EXTENSIONS in app.py
+For example ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'zip', 'rar', 'doc', 'docx'}
 
 - Documents: PDF, DOC, DOCX, etc
 - Images: PNG, JPG, JPEG, GIF
