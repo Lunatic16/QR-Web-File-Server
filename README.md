@@ -58,10 +58,13 @@ python app.py
 
 ## Supported File Types
 
-- Documents: PDF, DOC, DOCX
+Currently set to "None" to allow all file types but can be modified to restrict file types by adding them to line 14 ALLOWED_EXTENSIONS in app.py
+
+- Documents: PDF, DOC, DOCX, etc
 - Images: PNG, JPG, JPEG, GIF
 - Archives: ZIP, RAR
 - Text files: TXT
+- Video files: MP4, MKV
 
 ## Directory Structure
 
